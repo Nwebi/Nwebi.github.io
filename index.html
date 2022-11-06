@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="fullnav.css">
+    <link rel="stylesheet" href="Form2.css">
+    <link rel="stylesheet" href="Third.css">
+    <link rel="stylesheet" href="imagegala.css">
+</head>
+<body>
+   
+    <div class="bg">
+        <div  class="top-nav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#projects">Project 1</a>
+            <a href="#project2">Project 2</a>
+            <a href="#pictures">Pictures</a>
+        </div>
+    <div>
+        <p>&copy; 2018 Ebitech.com</p>
+    </div>
+</div>
+
+    <div id="projects">
+    <section id="contactME">
+            <h1>Contact Me</h1>
+            
+            <form method="POST" action="/">
+               <div class="field name-box">
+                 <input type="text" id="name typing" placeholder="Who Are You?" required />
+                 <label for="name">Name</label>
+               </div>
+         
+               <div class="field email-box">
+                 <input type="text" id="email typing" placeholder="name@email.com" required />
+                 <label for="email">Email</label>
+               </div>
+         
+               <div class="field msg-box">
+                 <textarea id="msg" rows="4" placeholder="Your message goes here..." required ></textarea>
+                 <label for="msg">Message</label>
+               </div>
+         
+               <input class="button" type="submit" value="Send"  />
+          </form>
+        </section>
+     </div>
+    
+    <div class="container" id="project2">
+        <form name="form">
+        <div class="display">
+        <input type="text" placeholder="0" name="displayResult" />
+        </div>
+        <div class="buttons">
+        <div class="row">
+        <input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+        <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+        <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+        <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+        <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+        <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+        <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+        <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+        <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+        <input type="button" name="mulb" value="*" onClick="calcNumbers(mulb.value)">
+        </div>
+        <div class="row">
+        <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+        <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+        <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
+        <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+        </div>
+        <div >
+           <input type="button" name="del" value="Del" class="removeKeys" onclick="backspace() ">
+           <input type="button" name="clear" value="Cl" class="removeKeys" OnClick = "form.displayResult.value = ' ' ">
+           <input type="button" name="mod" value="%" class="removeKeys" onclick="calcNumbers(mod.value)">
+        </div>
+        </div> 
+        </form>
+        </div>
+        <div class="imagediv" id="pictures">
+            <div class="gallery">
+                <a target="_blank" href="pics/a1.jpg " >
+                    <img src="pics/a1.jpg" alt="pix5" width="600px" height="400px" > </a>
+                      <div class="desc">Myself</div>
+            </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="pics/a7.jpg " >
+                <img src="pics/a7.jpg" alt="pix5" width="600px" height="400px" > </a>
+                  <div class="desc">same here</div>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="pics/a3.jpg " >
+                <img src="pics/a3.jpg" alt="pix5" width="600px" height="400px" > </a>
+                  <div class="desc">Me</div>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank" href="pics/a4.jpg " >
+                <img src="pics/a4.jpg" alt="pix5" width="600px" height="400px" > </a>
+                  <div class="desc">Sure</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="pics/a5.jpg " >
+                <img src="pics/a5.jpg" alt="pix5" width="600px" height="400px" > </a>
+                  <div class="desc">With my friends</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="pics/a6.jpg " >
+                <img src="pics/a6.jpg" alt="pix5" width="600px" height="400px" > </a>
+                  <div class="desc">Me and Neche baby</div>
+        </div>
+        </div>
+        <div id="about">
+            <h1>A B O U T</h1>
+            <p>My name is Ebi Daniel Chukwuebuka. I love ICT world and football.</p>
+            <p>I enjoy exploring new and innovative ways of doing things and I like reading</p>
+            <p>The world is like a book they say, "if you don't travel, you will keep reading the same page".</p>
+            <p>My grandpa told me that, "behind every successful man,there is a woman".</p>
+            <p>Because the women love the success and not the man.</p>
+        </div>
+       
+        <div id="contact">
+            <h1>C O N T A C T</h2>
+            <p>My Email: ebidaniel427@gmail.com</p>
+            <p>Phone Number : 0813 193 0371</p>
+            <p>Address : Festac Phase two, Lagos, Nigeria</p>
+        </div>
+        <script>
+        function calcNumbers(result){
+        form.displayResult.value=form.displayResult.value+result;
+        
+        }
+        
+           function backspace() {
+               var picks = document.form.displayResult.value;
+               document.form.displayResult.value = picks.substring(0,picks.length-1);
+           }
+        </script>
+    
+        <script src='jQuery/jquery-3.6.1.js'></script>
+        <script  src="Form2.js"></script>
+</body>
+</html>
